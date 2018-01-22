@@ -2,7 +2,7 @@
     "name": "object-path-value",
     "version": "1.0.0",
     "description": "",
-    "main": "object-path.js",
+    "main": "object-path-value.js",
     "scripts": {
         "format": "prettier --trailing-comma es5 --single-quote --write \"./object-path*.{js,ts}\"",
         "test": "jest --coverage"
@@ -10,7 +10,7 @@
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "dependencies": {
+    "devDependencies": {
         "jest": "^22.1.4",
         "prettier": "^1.10.2"
     }
