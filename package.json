@@ -1,0 +1,17 @@
+{
+    "name": "object-path",
+    "version": "1.0.0",
+    "description": "",
+    "main": "object-path-original.js",
+    "scripts": {
+        "format": "prettier --trailing-comma es5 --single-quote --write \"./object-path*.{js,ts}\"",
+        "test": "jest --coverage"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "jest": "^22.1.4",
+        "prettier": "^1.10.2"
+    }
+}
