@@ -1,8 +1,8 @@
 {
-    "name": "object-path",
+    "name": "object-path-value",
     "version": "1.0.0",
     "description": "",
-    "main": "object-path-original.js",
+    "main": "object-path.js",
     "scripts": {
         "format": "prettier --trailing-comma es5 --single-quote --write \"./object-path*.{js,ts}\"",
         "test": "jest --coverage"

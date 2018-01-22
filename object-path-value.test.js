@@ -1,4 +1,4 @@
-let getValue = require('./object-path');
+let getValue = require('./object-path-value');
 
 test('object', () => {
     const result = getValue({ foo: { bar: 'hello world' } }, 'foo.bar');
