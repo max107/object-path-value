@@ -1,9 +1,9 @@
-let getKey = key => {
-    let intKey = parseInt(key, 10);
+function getKey(key) {
+    var intKey = parseInt(key, 10);
     return intKey.toString() === key ? intKey : key;
-};
+}
 
-let hasShallowProperty = (obj, prop) => {
+function hasShallowProperty(obj, prop) {
     // to handle objects with null prototypes (too edge case?)
     if (obj === null) {
         return false;
@@ -14,15 +14,15 @@ let hasShallowProperty = (obj, prop) => {
     }
 
     return Object.prototype.hasOwnProperty.call(obj, prop);
-};
+}
 
-let getShallowProperty = (obj, prop) => {
+function getShallowProperty(obj, prop) {
     if (hasShallowProperty(obj, prop)) {
         return obj[prop];
     }
-};
+}
 
-const getFromObject = (obj, path, defaultValue) => {
+function getFromObject(obj, path, defaultValue) {
     if (typeof path === 'number') {
         path = [path];
     }
@@ -39,7 +39,7 @@ const getFromObject = (obj, path, defaultValue) => {
         }
     }
 
-    let currentPath = getKey(path[0]),
+    var currentPath = getKey(path[0]),
         nextObj = getShallowProperty(obj, currentPath);
 
     if (nextObj === void 0) {
@@ -51,6 +51,6 @@ const getFromObject = (obj, path, defaultValue) => {
     }
 
     return getFromObject(obj[currentPath], path.slice(1), defaultValue);
-};
+}
 
 module.exports = getFromObject;
