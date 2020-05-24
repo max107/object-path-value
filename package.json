@@ -1,19 +1,24 @@
 {
-    "name": "object-path-value",
-    "version": "1.0.0",
-    "description": "",
-    "main": "object-path-value.js",
-    "scripts": {
-        "format": "prettier --trailing-comma es5 --single-quote --write \"./object-path*.{js,ts}\"",
-        "test": "jest --coverage"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "prettier": "^1.10.2"
-    },
-    "dependencies": {
-        "jest": "^23.0.1"
-    }
+  "name": "object-path-value",
+  "version": "1.0.0",
+  "description": "",
+  "prepublish": "tsc",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/jest": "^25.2.3",
+    "@types/node": "^14.0.5",
+    "jest": "^26.0.1",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {}
 }
