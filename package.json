@@ -1,6 +1,6 @@
 {
   "name": "object-path-value",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "prepublish": "tsc",
   "main": "dist/index.js",
